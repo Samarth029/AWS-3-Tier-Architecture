@@ -1,0 +1,41 @@
+AWS 3-Tier WordPress Architecture
+
+Project Overview
+This project demonstrates a highly available WordPress application deployed on AWS using a 3-tier architecture.
+
+Architecture Flow
+User
+  ↓
+Application Load Balancer (ALB)
+  ↓
+Target Group
+  ↓
+Auto Scaling Group
+  ↓
+EC2 Instances
+  ↓
+Amazon RDS MySQL
+
+AWS Components Used
+- Amazon VPC
+- Subnets
+- Route Tables
+- Internet Gateway
+- Security Groups
+- Application Load Balancer
+- Target Group
+- EC2
+- Auto Scaling Group
+- Amazon RDS MySQL
+- AWS Systems Manager Session Manager
+
+Key Features
+- Load balancing through an Application Load Balancer
+- EC2 instances managed by an Auto Scaling Group
+- MySQL database hosted on Amazon RDS
+- Network isolation using VPC and subnets
+- Security Groups controlling communication between tiers
+- WordPress application accessible through the ALB
+
+Application
+The WordPress application runs on Apache/PHP on EC2 instances and uses Amazon RDS MySQL as the database.
